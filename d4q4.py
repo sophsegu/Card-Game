@@ -1,12 +1,3 @@
-﻿
-# Auteur : Sophie Séguin
-# Numero d'étudiant : 300225009
-# et 
-# Auteur : Christine Peters
-# Numéro d'étudiant : 300072385
-
-###########################################################
-
 
 # Jeu de cartes.
 
@@ -21,7 +12,6 @@
 
 import random
 
-#ces premieres fonctions sont deja completees pour vous, ne les changez pas
 
 def attend_le_joueur():
     '''()->None
@@ -53,11 +43,7 @@ def melange_paquet(p):
     '''
     random.shuffle(p)
     
-#######################################################################################
-#Les fonctions precedentes sont deja completees
-#Completez les fonctions apres ce commentaire
-#######################################################################################
-    
+
 def donne_cartes(p):
      '''(list of str)-> tuple of (list of str,list of str)
 
@@ -229,141 +215,3 @@ def joue():
 # programme principale deja completé
 joue()
 
-
-##################################################################################################################
-'''
-Un exemple de partie gagnee par Humain:
----------------------------------------
-
-Bonjour. Je m'appelle Robot et je distribue les cartes.
-Votre main est:
-7♡ 4♠ 9♣ 5♣ 9♠ Q♡ A♠ 10♢ J♠ 5♡ 7♢ 6♢ 10♠ Q♢ 4♡ Q♣ J♡ 7♠ 6♡ 6♠ 3♠ 3♢ 8♠ 10♣ K♢ 6♣ 
-Ne vous inquiétez pas, je ne peux pas voir vos cartes ni leur ordre.
-Maintenant défaussez toutes les paires de votre main. Je vais le faire moi aussi.
-Appuyez Enter pour continuer. 
-***********************************************************
-Votre tour.
-Votre main est:
-A♠ 7♢ Q♣ K♢ 10♣ 8♠ 
-J'ai 7 cartes. Si 1 est la position de ma première carte et
-7 est la position de ma dernière carte, laquelle de mes cartes vous voulez?
-SVP entrer un entier de 1 à 7: 6
-Vous avez demande ma 6ème carte.
-La voila. C'est un A♣
-Avec A♣ ajouté, votre main est:
-A♠ 7♢ Q♣ K♢ 10♣ 8♠ A♣ 
-Après défaussé toutes les paires et mélanger les cartes, votre main est:
-8♠ Q♣ 10♣ 7♢ K♢ 
-Appuyez Enter pour continuer. 
-***********************************************************
-Mon tour.
-J'ai pris votre 2ème carte.
-Appuyez Enter pour continuer. 
-***********************************************************
-Votre tour.
-Votre main est:
-8♠ 10♣ 7♢ K♢ 
-J'ai 5 cartes. Si 1 est la position de ma première carte et
-5 est la position de ma dernière carte, laquelle de mes cartes vous voulez?
-SVP entrer un entier de 1 à 5: 3
-Vous avez demande ma 3ème carte.
-La voila. C'est un 10♡
-Avec 10♡ ajouté, votre main est:
-8♠ 10♣ 7♢ K♢ 10♡ 
-Après défaussé toutes les paires et mélanger les cartes, votre main est:
-7♢ 8♠ K♢ 
-Appuyez Enter pour continuer. 
-***********************************************************
-Mon tour.
-J'ai pris votre 1ère carte.
-Appuyez Enter pour continuer. 
-***********************************************************
-Votre tour.
-Votre main est:
-8♠ K♢ 
-J'ai 3 cartes. Si 1 est la position de ma première carte et
-3 est la position de ma dernière carte, laquelle de mes cartes vous voulez?
-SVP entrer un entier de 1 à 3: 1
-Vous avez demande ma 1ère carte.
-La voila. C'est un K♣
-Avec K♣ ajouté, votre main est:
-8♠ K♢ K♣ 
-Après défaussé toutes les paires et mélanger les cartes, votre main est:
-8♠ 
-Appuyez Enter pour continuer. 
-***********************************************************
-Mon tour.
-J'ai pris votre 1ère carte.
-Appuyez Enter pour continuer. 
-***********************************************************
-J'ai terminé toutes les cartes.
-Felicitations! Vous, Humain, vous avez gagné.
->>> 
-'''
-
-##################################################################################################################
-'''
-Un exemple de partie gagnee par Robot:
----------------------------------------
-
-Bonjour. Je m'appele Robot et je donne les cartes.
-Votre main de cartes est:
-3♣ 6♣ 2♢ 10♡ 10♠ 8♢ 5♣ Q♣ 4♡ 8♠ 5♠ J♢ 3♢ A♠ 7♡ 3♠ A♣ 9♡ 3♡ 9♣ 8♣ 6♠ 7♣ 6♢ K♠ Q♠ 
-Ne vous inquitez pas, je ne peux pas voir votres cartes ou leur ordre.
-Maintenant defaussez toutes les paires de votre main. Je vais faire ca aussi.
-Appuyez Enter pour continuer. 
-***********************************************************
-Votre tour.
-Votre main est:
-4♡ 2♢ J♢ 6♣ 8♣ K♠ 
-J'ai 5 cartes. Si 1 est la position de ma premiere carte et
-5 est la position de ma derniere carte, laquelle de mes cartes vous voulez?
-SVP entrer un entier de 1 a 5: 5
-Vous avez demande ma 5-eme carte.
-La voila. C'est un K♣
-Avec K♣ ajoute, votre main est:
-4♡ 2♢ J♢ 6♣ 8♣ K♠ K♣ 
-Apres defausser toutes les paires et melanger les cartes, votre main est:
-J♢ 6♣ 8♣ 4♡ 2♢ 
-Appuyez Enter pour continuer. 
-***********************************************************
-Mon tour.
-J'ai pris votre 2-eme carte.
-Appuyez Enter pour continuer. 
-***********************************************************
-Votre tour.
-Votre main est:
-J♢ 8♣ 4♡ 2♢ 
-J'ai 3 cartes. Si 1 est la position de ma premiere carte et
-3 est la position de ma derniere carte, laquelle de mes cartes vous voulez?
-SVP entrer un entier de 1 a 3: 3
-Vous avez demande ma 3-eme carte.
-La voila. C'est un 8♡
-Avec 8♡ ajoute, votre main est:
-J♢ 8♣ 4♡ 2♢ 8♡ 
-Apres defausser toutes les paires et melanger les cartes, votre main est:
-4♡ 2♢ J♢ 
-Appuyez Enter pour continuer. 
-***********************************************************
-Mon tour.
-J'ai pris votre 2-eme carte.
-Appuyez Enter pour continuer. 
-***********************************************************
-Votre tour.
-Votre main est:
-4♡ J♢ 
-J'ai 1 cartes. Si 1 est la position de ma premiere carte et
-1 est la position de ma derniere carte, laquelle de mes cartes vous voulez?
-SVP entrer un entier de 1 a 1: 1
-Vous avez demande ma 1-ere carte.
-La voila. C'est un 4♣
-Avec 4♣ ajoute, votre main est:
-4♡ J♢ 4♣ 
-Apres defausser toutes les paires et melanger les cartes, votre main est:
-J♢ 
-Appuyez Enter pour continuer. 
-J'ai terminé toutes les cartes.
-Vous avez perdu! Moi, Robot, j'ai gagné.
->>> 
-'''
-##################################################################################################################
